@@ -1,3 +1,11 @@
+/*
+ * Reference FP8 helpers for DeepSeek V4: decode E4M3 values and E8M0 scales,
+ * round to the nearest E4M3, simulate the model's blockwise activation
+ * quantization, and a block-scaled W8 matvec. These are the correctness oracle;
+ * faster CPU/GPU kernels must match them without changing the checkpoint
+ * format.
+ */
+
 #ifndef DSV4_QUANT_H
 #define DSV4_QUANT_H
 #include <math.h>

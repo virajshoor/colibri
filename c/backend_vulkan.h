@@ -1,3 +1,10 @@
+/*
+ * C ABI of the optional Vulkan GPU tier (VULKAN=1), implemented in
+ * backend_vulkan.c with compute shaders compiled to SPIR-V from shaders/. Works
+ * on any Vulkan GPU, including AMD cards through RADV. Every call returns 0 when
+ * Vulkan is unavailable so the engine falls back to the CPU path.
+ */
+
 #ifndef COLIBRI_BACKEND_VULKAN_H
 #define COLIBRI_BACKEND_VULKAN_H
 

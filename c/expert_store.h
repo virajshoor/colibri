@@ -1,3 +1,11 @@
+/*
+ * Expert store interface. The store caches routed-expert weights and hands out
+ * leased views of one expert's gate, up and down tensors keyed by (layer,
+ * expert). Engines look an expert up, use it, and release it; the store decides
+ * what stays resident, prefetches ahead of routing, and reports hit/miss and
+ * byte counters. The lease rules are spelled out below.
+ */
+
 #ifndef COLIBRI_EXPERT_STORE_H
 #define COLIBRI_EXPERT_STORE_H
 

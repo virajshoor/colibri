@@ -1,3 +1,9 @@
+/*
+ * Dual reference matvecs: two weight matrices (for example an expert's gate and
+ * up projections) applied to the same input in one pass, so the input is read
+ * and quantized once. FP4 and FP8 variants.
+ */
+
 #ifndef COLIBRI_NATIVE_QUANT_DUAL_H
 #define COLIBRI_NATIVE_QUANT_DUAL_H
 

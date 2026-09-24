@@ -1,3 +1,12 @@
+/*
+ * Reference mHC (manifold-constrained hyper-connections) for DeepSeek V4. The
+ * model keeps M parallel residual streams; dsv4_mhc_pre mixes them into one
+ * layer input with sigmoid gates and builds a Sinkhorn-normalized M x M
+ * combination matrix that dsv4_mhc_post uses to fold the layer output back into
+ * the streams.
+ * BF16 rounding matches the checkpoint's torch oracle bit for bit.
+ */
+
 #ifndef DSV4_MHC_H
 #define DSV4_MHC_H
 #include <math.h>
