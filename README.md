@@ -593,6 +593,7 @@ Two things that differ per model, both documented in the per-model page:
 | CUDA backend, VRAM expert tier, full residency | [docs/cuda.md](docs/cuda.md) |
 | Vulkan backend (any GPU: AMD via RADV, incl. cards ROCm dropped) | [docs/vulkan.md](docs/vulkan.md) |
 | Apple Silicon Metal backend | [docs/metal.md](docs/metal.md) |
+| Swift + MLX front end for MLX-format models on Apple Silicon | [swift/README.md](swift/README.md) |
 | OpenAI-compatible API, KV slots, web dashboard | [docs/api.md](docs/api.md) |
 | Brio mode: score a closed set of options instead of generating | [docs/brio.md](docs/brio.md) |
 | Experimental layer-segment embedding ABI | [docs/segment-runtime.md](docs/segment-runtime.md) |
@@ -712,6 +713,7 @@ c/
 ├── tools/                offline conversion, fixtures and benchmarks
 ├── scripts/              long-running conversion helpers
 └── tests/                dependency-free C and Python tests
+swift/                    Swift + MLX front end for Apple Silicon (see swift/README.md)
 web/                      browser UI (pure OpenAI-API client)
 desktop/                  Tauri v2 desktop shell wrapping the web UI
 docker/                   container images

@@ -1,3 +1,11 @@
+/*
+ * Shared helpers for batched decode in serve mode: KV row addressing for one
+ * sequence (f32 and fp8 caches), parsing of the SUBMIT request header and its
+ * key=value extensions into ColiSubmit, token-id payload parsing, and formatting
+ * of the per-token logprob tail. Header-only so every engine uses the same wire
+ * rules.
+ */
+
 #ifndef COLIBRI_DECODE_BATCH_H
 #define COLIBRI_DECODE_BATCH_H
 

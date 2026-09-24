@@ -1,3 +1,11 @@
+/*
+ * Registry behind the layer-segment runtime ABI (segment_runtime.h). Adapters
+ * register at process start; callers open an engine by id, create sessions over
+ * a layer range, run activations through them, and snapshot or restore their
+ * state. This file validates every argument and tracks open sessions before
+ * forwarding the call to the adapter.
+ */
+
 #include "segment_runtime.h"
 
 #include <stdio.h>

@@ -1,3 +1,11 @@
+/*
+ * Scalar reference code for the native low-precision formats: E8M0 scales,
+ * E2M1 (FP4), E4M3 (FP8) and BF16 decode/encode, blockwise activation
+ * quantize-dequantize, a Hadamard transform, and FP4/FP8 matvecs. The *_rows16_order
+ * variants accumulate in the same order as the SIMD rows16 kernels so both
+ * produce identical bits.
+ */
+
 #ifndef COLIBRI_NATIVE_QUANT_H
 #define COLIBRI_NATIVE_QUANT_H
 

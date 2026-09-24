@@ -3,6 +3,13 @@
 All notable changes to colibrì are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/).
 
+## [Unreleased]
+
+### Added
+- `swift/`: a Swift + MLX front end for Apple Silicon, next to the C engine in
+  `c/`. It runs MLX-format models through MLX Swift LM, with docs in English,
+  简体中文, 繁體中文, Italiano and 日本語 and a `docs/swift-mlx.md` page.
+
 ## [1.12.1] — 2026-09-24
 
 95 pull requests since v1.12.0, 82 of them from contributors. Two tokenizers

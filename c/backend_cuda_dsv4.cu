@@ -1,3 +1,11 @@
+/*
+ * DeepSeek V4 CUDA backend (API in backend_cuda_dsv4.h). Uploads FP8/FP4
+ * block-scaled and BF16 weights, runs matvec and batched matmul, sparse window
+ * attention over the compressed KV cache, and routed-expert sets, with CUDA graph
+ * capture. Optional paths: cuBLASLt MXFP8 tensor cores (DSV4_CUDA_TC=1, needs
+ * CUDA 12.8+), NCCL multi-GPU (COLI_DSV4_NCCL) and DeepGEMM (COLI_DSV4_DEEPGEMM).
+ */
+
 #include "backend_cuda_dsv4.h"
 #include <chrono>
 #include <cuda_runtime.h>

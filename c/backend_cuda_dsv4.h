@@ -1,3 +1,10 @@
+/*
+ * C ABI of the DeepSeek V4 CUDA backend (backend_cuda_dsv4.cu). Opaque handles
+ * for device tensors, activations, KV caches, expert sets and captured CUDA
+ * graphs, plus the upload, matvec/matmul and attention entry points that
+ * deepseek_v4.c calls when a GPU is available.
+ */
+
 #ifndef COLIBRI_BACKEND_CUDA_DSV4_H
 #define COLIBRI_BACKEND_CUDA_DSV4_H
 #include <stdint.h>

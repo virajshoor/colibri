@@ -1,3 +1,11 @@
+/*
+ * CUDA (and HIP/ROCm) implementation of the optional GPU tier declared in
+ * backend_cuda.h. Brings up the devices, uploads resident quantized tensors once
+ * and reuses them, runs the quantized matmul, expert and attention kernels, and
+ * keeps a paged ragged KV cache on the device. Built only with CUDA=1, or as
+ * coli_cuda.dll on Windows, which the host resolves at run time.
+ */
+
 #include "backend_cuda.h"
 #include "fp8_format.h"   /* FP8_BLOCK: the shared fmt=8 scale-block edge (see that header) */
 

@@ -1,3 +1,9 @@
+/*
+ * Public interface of the DeepSeek V4 engine (deepseek_v4.c): the model config
+ * read from config.json, the chat prompt builder, and the engine and session
+ * API (open, create a session, generate).
+ */
+
 #ifndef COLIBRI_DEEPSEEK_V4_H
 #define COLIBRI_DEEPSEEK_V4_H
 

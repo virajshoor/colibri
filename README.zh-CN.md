@@ -388,6 +388,7 @@ c/
 ├── tools/                离线转换、fixtures 与 benchmarks
 ├── scripts/              长时间转换辅助工具
 └── tests/                零依赖的 C 与 Python 测试
+swift/                    面向 Apple Silicon 的 Swift + MLX 前端（见 swift/README.zh-CN.md）
 web/                      浏览器 UI（纯 OpenAI API client）
 desktop/                  封装网页 UI 的 Tauri v2 桌面 shell
 docs/                     参考文档、实验、媒体文件与 DeepSeek V4 说明

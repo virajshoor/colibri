@@ -368,6 +368,7 @@ c/
 ├── tools/                離線轉換、fixtures 與 benchmarks
 ├── scripts/              長時間轉換輔助工具
 └── tests/                零相依套件的 C 與 Python 測試
+swift/                    針對 Apple Silicon 的 Swift + MLX 前端（見 swift/README.zh-TW.md）
 web/                      瀏覽器 UI（純 OpenAI API client）
 desktop/                  包裝網頁 UI 的 Tauri v2 桌面 shell
 docs/                     參考文件、實驗與媒體檔

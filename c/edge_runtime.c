@@ -1,3 +1,10 @@
+/*
+ * Registry behind the edge runtime ABI (edge_runtime.h). Adapters register at
+ * process start; callers open an engine by id and call tokenize, detokenize,
+ * embed, select and logits. This file validates every argument (ids, dtypes,
+ * buffer sizes, capabilities) before forwarding the call to the adapter.
+ */
+
 #include "edge_runtime.h"
 
 #include <stdio.h>
