@@ -630,7 +630,7 @@ c/
 ├── tools/                オフライン変換、フィクスチャ、ベンチマーク
 ├── scripts/              長時間実行の変換ヘルパー
 └── tests/                依存関係のない C と Python のテスト
-swift/                    Apple Silicon 向け Swift + MLX フロントエンド（swift/README.ja.md 参照）
+swift/                    単体で動く Swift エンジン + OpenAI サーバー + MLX ツール（swift/README.ja.md 参照）
 web/                      ブラウザ UI（純粋な OpenAI API クライアント）
 desktop/                  Web UI をラップする Tauri v2 デスクトップシェル
 docker/                   コンテナイメージ

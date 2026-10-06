@@ -429,7 +429,7 @@ c/
 ├── tools/                conversione offline, fixture e benchmark
 ├── scripts/              helper per conversioni lunghe
 └── tests/                test C e Python senza dipendenze
-swift/                    front end Swift + MLX per Apple Silicon (vedi swift/README.it.md)
+swift/                    motore Swift autonomo + server OpenAI + MLX (vedi swift/README.it.md)
 web/                      UI browser (puro client API OpenAI)
 desktop/                  shell desktop Tauri v2 che racchiude la web UI
 docs/                     documentazione di riferimento, esperimenti, media

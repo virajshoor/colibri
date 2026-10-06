@@ -6,8 +6,12 @@ Format follows [Keep a Changelog](https://keepachangelog.com/).
 ## [Unreleased]
 
 ### Added
-- `swift/`: a Swift + MLX front end for Apple Silicon, next to the C engine in
-  `c/`. It runs MLX-format models through MLX Swift LM, with docs in English,
+- `swift/`: a self-contained Swift implementation for Apple Silicon that needs
+  nothing from `c/`. `coli` (Swift) reads colibrì's quantized safetensors
+  containers, streams routed experts from SSD into a RAM cache with
+  `.coli_usage` pinning, runs the GLM / DeepSeek-V3 MLA + MoE model on CPU with
+  Accelerate, and serves an OpenAI-compatible API (`coli serve`).
+  `colibri-swift` runs MLX-format models through MLX Swift LM. Docs in English,
   简体中文, 繁體中文, Italiano and 日本語 and a `docs/swift-mlx.md` page.
 
 ## [1.12.1] — 2026-09-24
